@@ -1,0 +1,35 @@
+%html
+  %head
+    %link{ :rel=>'stylesheet', :href=>'/css/blueprint/screen.css', :type => "text/css", :media => "screen, projection" }
+    %link{ :rel=>'stylesheet', :href=>'/css/blueprint/print.css', :type => "text/css", :media => "print" }
+    %link{ :rel=>'stylesheet', :href=>'/css/default.css', :type => "text/css" }
+    /[if lt IE 8]
+      %link{ :rel=>'stylesheet', :href=>'css/blueprint/ie.css', :type => "text/css", :media => "screen, projection"}
+  %body
+    .container
+      .span-4.prepend-top
+        %h3 ZHENG-DA
+      .span-3.prepend-top
+        %h3
+          %a{ :href => "#" } +我要发帖
+      .span-3.append-5.prepend-top
+        %h3
+          %a{ :href => "#" } 热门话题
+      .span-1.prepend-top
+        %h4
+          %a{ :href => "#" } 注册
+      .span-1.prepend-top
+        %h4
+          %a{ :href => "#" } 登录
+      .span-6
+        %input.title#search-box{ :type => "text", :placeholder => "搜索您感兴趣的话题..." }
+      .span-1.last.prepend-top
+        %b GO
+      %hr
+      %span-24
+        = yield      
+      %hr.space
+      %span-24
+        底部
+      
+

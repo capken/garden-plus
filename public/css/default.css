@@ -1,0 +1,23 @@
+#search-box {
+  width: 230px;
+}
+
+#post-comment textarea {
+  height: 150px;
+}
+
+div h3 {
+  vertical-align: baseline;
+}
+
+.post-title {
+  font-size: 15px;
+}
+
+.comment {
+  border: 1px dashed #ccc;
+  padding: 0px 10px;
+  margin: 10px 10px 10px 0px;
+}
+
+
